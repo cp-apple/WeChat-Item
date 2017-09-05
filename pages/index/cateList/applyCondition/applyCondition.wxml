@@ -1,0 +1,29 @@
+<!--申报条件展示页面-->
+<view class="">
+  <view class="applyCBox">
+    <block wx:for="{{applyCondition}}" wx:key="{{item}}">
+      <view class="applyItem">
+        <view class="allayCCate" data-apply-index="{{index}}" catchtap="showApplyConTap">
+          <image src="{{item.applyIcon}}"></image>
+          <text>{{item.applyName}}</text>
+          <view class="b_arrow">
+            <image src="/images/icons/b_arrow.png"></image>
+          </view>
+        </view>
+       
+        <view class="applyCCon {{showCon==index?'on':''}}">
+          <block wx:for="{{applyCondition[index].applyCon}}" wx:for-item="itemTxt" wx:key="{{index}}">
+            <text>{{itemTxt}}</text>
+          </block>
+        </view>
+      </view>
+    </block>
+    
+  </view>
+
+  <!-- 在线办理页面过来才显示 -->
+  <view class="onlineHandle" wx:if="{{page=='onlineHandle'}}" bindtap="oHandlePage">
+    <text>在线办理</text>
+  </view>
+
+</view>

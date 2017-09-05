@@ -1,0 +1,29 @@
+/* 服务网点 */
+@import "../onlineDeal/onlineDeal.wxss";
+
+.sDotItem{
+  padding: 10px 0;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+.addrImg{
+  margin: 0 20rpx 0 10rpx;
+  width: 120rpx;
+  height: 90rpx;
+}
+.dotDetail image{
+  width: 28rpx;
+  height: 35rpx;
+  margin-right: 20rpx;
+}
+
+.dotDetail{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.dotDetail view{
+  display: flex;
+  align-items: center
+}

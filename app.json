@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/serviceDot/serviceDot",
+    "pages/index/serviceDot/serviceDotDetail/serviceDotDetail",
+    "pages/index/onlineDeal/onlineDeal",
+    "pages/index/onlineDeal/oHandlePage/oHandlePage",
+    "pages/index/cateList/cateList",
+    "pages/index/cateList/applyCondition/applyCondition",
+
+    "pages/welcome/welcome",
+    "pages/myVoice/myVoice",
+    "pages/myVoice/onlineMsg/onlineMsg",    
+    "pages/myVoice/youQiA/youQiA",
+    "pages/myVoice/pList/pList",
+    "pages/myVoice/pDetail/pDetail",
+    "pages/pCenter/pCenter",
+    "pages/pCenter/platform/platform",
+    "pages/pCenter/myBusiness/myBusiness",
+    "pages/pCenter/myProblem/myProblem",   
+    "pages/service/service",
+    "pages/service/serviceDetail/serviceDetail",
+    "pages/pCenter/myInfo/myInfo",
+    "pages/pCenter/myInfo/editHImg/editHImg",
+    "pages/pCenter/myInfo/editInfo/editInfo",
+    "pages/pCenter/myInfo/editPwd/editPwd"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2ba4e3",
+    "navigationBarTitleText": "锦江区公共服务",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#aaccee",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#808080",
+    "selectedColor": "#2ba4e3",
+    "backgroundColor": "#f2f2f2",
+    "borderStyle": "#dbd6d6",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "公共服务",
+        "iconPath": "images/icons/n1.png",
+        "selectedIconPath": "images/icons/ns1.png"
+      },
+      {
+        "pagePath": "pages/myVoice/myVoice",
+        "text": "我的声音",
+        "iconPath": "images/icons/n2.png",
+        "selectedIconPath": "images/icons/ns2.png"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "text": "生活服务",
+        "iconPath": "images/icons/n3.png",
+        "selectedIconPath": "images/icons/ns3.png"
+      },
+      {
+        "pagePath": "pages/pCenter/pCenter",
+        "text": "个人中心",
+        "iconPath": "images/icons/n4.png",
+        "selectedIconPath": "images/icons/ns4.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

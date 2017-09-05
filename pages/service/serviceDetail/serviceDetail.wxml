@@ -1,0 +1,12 @@
+<!--服务详情页-->
+<view class="">
+  <block wx:for="{{sDetail}}" wx:key="{{item}}">
+    <view class="item">
+      <image src="/images/icons/mapMarkers.png"></image>
+      <text class="pointTitle">{{item.pointName}} 详情 »</text>
+      <view class="">
+        <text class="addr">地址：</text><text class="">{{item.pointAddr}}</text>
+      </view>
+    </view>
+  </block>  
+</view>

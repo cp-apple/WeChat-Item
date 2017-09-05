@@ -1,0 +1,28 @@
+<!--个人中心-->
+<view class="">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="userinfo-other">地址：{{userInfo.city}}</text>
+  </view>
+
+  <view class="allItem">
+    <view class="item" bindtap="goMyInfo">
+      <image src="/images/icons/pcenter1.png"></image>
+      <text>个人资料</text>
+    </view>
+    <view class="item" bindtap="goMyBusiness">
+      <image src="/images/icons/pcenter2.png"></image>
+      <text>我的办理</text>
+    </view>
+    <view class="item" bindtap="goMyProblem">
+      <image src="/images/icons/pcenter3.png"></image>
+      <text>我的提问</text>
+    </view>
+    <view class="item" bindtap="goPlatForm">
+      <image src="/images/icons/pcenter4.png"></image>
+      <text>平台介绍</text>
+    </view>
+  </view>
+
+</view>

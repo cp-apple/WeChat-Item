@@ -1,0 +1,28 @@
+<!--我的办理-->
+<view class="">
+  <block wx:for="{{logData}}" wx:key="{{item}}">
+    <view class="item">
+      <view class="itemTIt" bindtap="showCon" data-index="{{index}}">
+        <image src="{{index==isShow?'/images/icons/myBuss2.png':'/images/icons/myBuss1.png'}}"></image>
+        <text>流水号：{{item.DNumber}}</text>
+        <image class="rImg" src="{{index==isShow?'/images/icons/myBuss4.png':'/images/icons/myBuss3.png'}}"></image>
+        <text class="itemState">{{index==isShow?'收起':'展开'}}</text>
+      </view>
+
+      <view class="itemCon" wx:if="{{index==isShow}}">
+        <text class="myBussAddr">{{item.TName}}</text>
+        <text>办理状态情况</text>
+
+        <view class="myBussLog">
+          <block wx:for="{{item.Logs}}" wx:for-item="logItem" wx:key="{{logItem}}">
+            <view class="classname">
+              <text>{{logItem}}</text>
+            </view>
+          </block>
+
+        </view>
+      </view>
+    </view>
+  </block>
+
+</view>

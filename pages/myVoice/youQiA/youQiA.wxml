@@ -1,0 +1,20 @@
+<!--你问我答-->
+<view class="youQiA">
+  <text class="date">{{newDate}}</text>
+  <view class="item left">
+    <image src="/images/icons/avatarImg.jpg"></image>
+    <text>您好！很高兴为您服务！</text>
+  </view>
+  <block wx:for="{{saySomething}}" wx:key="{{item}}">
+    <view class="item right">
+      <image src="/images/icons/avatarImg.jpg"></image>
+      <text>{{item}}</text>
+    </view>
+  </block>
+
+  <form bindsubmit="formSubmit">
+    <image src="/images/icons/microphone.png"></image>
+    <input type="text" focus="{{focus}}" name="sayValue" value="{{iptValue}}" />        
+    <button class="btn" formType="submit">发送</button>
+  </form>
+</view>

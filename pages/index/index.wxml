@@ -1,0 +1,38 @@
+<!--首页公共服务-->
+<view class="">
+  <!--  搜索区  -->
+  <view class="searchArea">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <input placeholder="请输入要搜索的内容..."/>  
+      <image src="/images/icons/search.png"></image>    
+    </form>
+  </view>
+
+  <!--  品类展示区  -->
+  <view class="cateBox">
+    <block wx:for="{{cateInfo}}" wx:key="{{item}}">
+      <view class="cateItem" catchtap="thisCateListTap" data-cate-id="{{item.cateId}}">
+        <image src="{{item.cateIcon}}"></image>
+        <text>{{item.cateName}}</text>
+      </view>
+    </block>
+  </view>
+
+  <!--  其他服务  -->
+  <view class="otherCateBox">
+    <view class="borderBox" bindtap="goOnlineDeal">
+      <view class="otherCateItem">
+        <image src="/images/icons/a1.png"></image><text class="otherCateTit">在线办理</text>
+        <text class="otherCateSurvey">快捷在线办理公共服务业务</text>
+      </view>
+    </view>
+    
+    <view class="borderBox" bindtap="goServiceDot">
+      <view class="otherCateItem">
+        <image src="/images/icons/a2.png"></image><text class="otherCateTit">服务网点</text>
+        <text class="otherCateSurvey">快捷查询办理中心信息</text>
+      </view>
+    </view>
+  </view>
+
+</view>

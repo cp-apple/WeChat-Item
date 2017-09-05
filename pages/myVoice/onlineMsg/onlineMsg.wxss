@@ -1,0 +1,86 @@
+/* 在线留言 */
+page{
+  font-size: 14px;
+}
+form{
+  border-top: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
+  padding: 0 20rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.title{
+  display: flex;  
+  /* justify-content: center;
+  align-items: cnter;
+  align-content: center; */
+  text-align: center;
+}
+.title text{
+  flex: 1;
+  display: block;
+  line-height: 100rpx;
+  font-size: 16px;
+
+}
+.title text.on{
+  background-color: #FFA960;
+  color: #fff;
+}
+.need{
+  color: #ff4c4c;
+  margin-right: 10rpx;
+}
+
+.btn-area{
+  margin: 30px 0 10px;
+  display: flex;
+}
+.btn-area button{
+  flex: 1;
+  border: none;
+  background-color: #2BA4E3;
+  color: #fff;
+  font-size: 15px;
+  margin: 0 10rpx;
+}
+.section{
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.section__title{
+  font-size: 15px;
+  flex: 1;
+}
+.section input{
+  flex: 3
+}
+.conDescribe{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+textarea{
+  margin-top: 4px;
+  background-color: #f2f2f2;
+  padding: 5px 10rpx;
+  font-size: 12px;
+  width: calc(100% - 20rpx);
+  border-radius: 5px;
+}
+label{
+  font-size: 12px;
+  margin-right: 10rpx;
+}
+.fr{
+  float: right;
+}
+picker{
+  width: 100%
+}
+
+

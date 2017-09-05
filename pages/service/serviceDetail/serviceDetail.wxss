@@ -1,0 +1,38 @@
+/* 服务详情页 */
+.item{
+  padding: 10px 10rpx;
+  border-bottom: 1px dashed #2BA4E3;
+  margin-bottom: 5px;
+}
+text{
+  color: #666;
+  font-size: 12px;
+}
+.item image{
+  float: left;
+  margin-top: -5px;
+  width: 50rpx;
+  height: 70rpx;
+}
+.pointTitle{
+  display: block;
+  margin-bottom: 3px;
+  color: #2BA4E3;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.item view{
+  display: flex;
+}
+.addr{
+  width: 100rpx;
+  font-weight: bold;
+}
+
+
+
+
+
+

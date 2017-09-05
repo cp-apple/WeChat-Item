@@ -1,0 +1,17 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+} 
+text,input{
+  font-size: 14px;
+  font-family: "microsoft yahei",sans-serif;
+}
+image{
+  vertical-align: middle;
+}

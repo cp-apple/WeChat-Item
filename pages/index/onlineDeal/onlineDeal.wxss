@@ -1,0 +1,61 @@
+/* 在线办理 */
+page{
+  background-color: #f2f2f2;
+}
+.wrap{
+  padding-top: 10px;
+}
+.cateItem{
+  margin-bottom: 10px;
+}
+.cateTitle{
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1px solid #2BA4E3;
+  background-color: #fff;
+}
+.cateTitle .icon{
+  margin: 0 15rpx 0 20rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+.cateTitle text{
+  font-size: 16px;
+}
+.cateTitle .arrow{
+  display: flex;
+  height: 90rpx;
+  width: 70rpx;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  background-color: #2BA4E3;
+}
+.cateTitle .arrow image{
+  width: 14px;
+  height: 14px;
+}
+
+.cateCon{
+  background-color: #fff;
+  padding: 0 20rpx;
+  font-size: 14px;
+}
+.cateConItem{
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1px solid #ddd;
+}
+.applyHandle{
+  float: right;
+  padding: 0 16rpx;
+  margin-top: 20rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  color: #ddd;
+  border: 1px solid #ddd;
+}
+.applyHandle.true{
+  color: #2BA4E3;
+  border-color: #2BA4E3;
+}

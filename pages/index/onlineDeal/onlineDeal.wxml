@@ -1,0 +1,27 @@
+<!--在线办理-->
+<view class="wrap">
+  <block wx:for="{{cateInfo}}" wx:key="item">     
+  <view class="cateItem">
+    <view class="cateTitle" bindtap="showHideCon" data-cate-id="{{item.cateId-1}}">
+      <image class="icon" src="{{item.cateIcon}}"></image>
+      <text>{{item.cateName}}</text>
+      <view class="arrow">
+        <image src="/images/white_br.png"></image>
+      </view>
+    </view>
+
+    <view class="cateCon" wx:if="{{index==showIndex}}">
+      <block wx:for="{{item.cateDetail}}" wx:key="cataD" wx:for-item="cateD">    
+      <view class="cateConItem">
+        <text>{{cateD.detailTit}}</text>
+        <text class="applyHandle {{cateD.isApply}}" data-deal-tit="{{cateD.detailTit}}" data-is-tap="{{cateD.isApply}}" data-cate-id="{{item.cateId}}" data-detail-id="{{cateD.detailId}}" bindtap="goApplyHandle">申请办理</text>
+      </view>
+      </block>
+    </view>
+
+  </view>
+  </block> 
+    
+</view>
+
+

@@ -1,0 +1,120 @@
+/* 你问我答 */
+
+page {
+  background-color: #f2f2f2;
+}
+
+.youQiA {
+  padding: 0 15rpx 50px;
+}
+
+.date {
+  padding: 2px 0;
+  margin: 10px auto;
+  display: block;
+  width: 260rpx;
+  text-align: center;
+  background-color: #ccc;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.item {
+  margin: 7px 0;
+  overflow: hidden;
+}
+
+.item image {
+  width: 80rpx;
+  height: 80rpx;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.item text {
+  position: relative;
+  margin-left: 30rpx;
+  display: inline-block;
+  max-width:540rpx;
+  padding: 7px 15rpx;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 16px;
+  border-radius: 3px;
+  word-break:break-all;
+}
+
+.item text:before {
+  position: absolute;
+  top: 30rpx;
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  transform: rotate(45deg);
+}
+
+.item.left text:before {
+  left: -5px;
+  border-top: 0;
+  border-right: 0;
+}
+
+
+.item.right image {
+  float: right;
+  margin-left: 30rpx;
+}
+
+.item.right text {
+  float: right;
+}
+
+.item.right text:before {
+  right: -5px;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+form {
+  padding: 10px 10rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  background-color: #f2f2f2;
+}
+
+form image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+input {
+  margin: 0 20rpx;
+  padding: 2px 0;
+  padding-left: 10rpx;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 3px;
+  width: 65%;
+  border: 1px solid #c3c3c5;
+  vertical-align: middle;
+}
+
+.btn {
+  display: inline-block;
+  width: 100rpx;
+  padding: 1px 0;
+  background-color: #ccc;
+  border: 1px solid #c3c3c5;
+  text-align: center;
+  font-size: 12px;
+  vertical-align: middle;
+  line-height: 1.8;
+}

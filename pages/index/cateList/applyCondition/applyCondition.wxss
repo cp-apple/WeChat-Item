@@ -1,0 +1,82 @@
+/* 申报条件展示页面 */
+page{
+  background-color: #f2f2f2;
+}
+.applyCBox{
+  display: flex;
+  flex-direction: column;
+}
+.applyItem{
+  margin-top: 10px;
+  background-color: #fff;
+}
+.allayCCate{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  border-bottom: 1px solid #2ba4e3;
+}
+.allayCCate image{
+  width: 45rpx;
+  height: 40rpx;
+  margin: 10px 15rpx;
+}
+.allayCCate text{
+  font-size: 16px;
+  width: 100%;
+  align-self: center;
+}
+.allayCCate view{
+  background-color: #2ba4e3;
+  display: flex;
+  align-items: center;
+}
+.allayCCate view image{
+  width: 15px;
+  height: 20rpx;
+  margin: 0 20rpx;
+}
+
+.applyCCon{
+  display: none; 
+  padding: 10px 15rpx;
+}
+.on{
+  display: block;
+}
+.applyCCon text{
+  display: block;
+  line-height: 50rpx;
+}
+
+.onlineHandle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.onlineHandle text{
+  padding: 8px 30rpx;
+  border: 1px solid #787575;
+  color: #333;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+<!--服务网点-->
+<view class="wrap">
+  <block wx:for="{{sDotInfo}}" wx:key="item">
+  <view class="cateItem">
+    <view class="cateTitle" bindtap="showHideCon" data-sdot-id="{{item.sDotId-1}}">
+      <image class="icon" src="/images/cate9.png"></image>
+      <text>{{item.sDotName}}</text>
+      <view class="arrow">
+        <image src="/images/white_br.png"></image>
+      </view>
+    </view>
+
+    <view class="cateCon" wx:if="{{index==showIndex}}">
+      <block wx:for="{{item.sDotDetail}}" wx:key="sDotD" wx:for-item="sDotD">
+      <view class="sDotItem">
+        <image class="addrImg" src="{{sDotD.sDotImg}}"></image>
+        <view class="dotDetail">
+          <text bindtap="goSdotDetail" data-s-dot-id="{{item.sDotId}}" data-s-dot-dname="{{sDotD.sDotDetailName}}" data-s-dot-detail-id="{{sDotD.sDotDetailId}}">{{sDotD.sDotDetailName}}</text>
+          <view>
+            <image src="/images/map.png"></image>
+            <text>地址：{{sDotD.sDotAddr}}</text>
+          </view>
+          <view>
+            <image src="/images/phone.png"></image>
+            <text bindtap="callYou" data-tel="859523199">电话：{{sDotD.sDotTel}}</text>
+          </view>
+        </view>
+      </view>
+      </block>
+    </view>
+
+  </view>
+  </block> 
+    
+</view>

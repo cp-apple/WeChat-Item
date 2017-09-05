@@ -1,0 +1,95 @@
+/* 在线办理表单页面 */
+page{
+  padding: 0 0 20px;  
+  height: 100%;
+}
+.oHandlePage{
+  height: 100%;
+}
+.dealTit{
+  padding: 8px 0; 
+  text-align: center;
+  font-size: 15px;
+}
+form{
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 0 20rpx 120rpx;
+  position: relative;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  background-color: #fff;
+}
+.essential{
+  color: #ff4c4c;
+  vertical-align: middle;
+  margin-right:5rpx;
+}
+.btn-area{
+  position: absolute;
+  bottom: 10px;
+  left: 2%;
+  display: block;
+  width: 96%;
+}
+.btn-area button{
+  border: none;
+  background-color: #2BA4E3;
+  color: #fff;
+  font-size: 15px;
+}
+.section{
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.section__title{
+  font-size: 15px;
+  flex: 1;
+}
+.section input{
+  flex: 4
+}
+picker{
+  width: 100%;
+}
+.pickerSelTxt{
+  float: right;
+}
+
+/* 图片上传 */
+.uploadArea{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.upImgItem{
+  width: 46%;
+  margin: 10px 1% 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+.imgBox{
+  margin: 5px auto;
+  width: 300rpx;
+  height: 300rpx;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+.upImgItem image{
+  width: 100%;
+  height: 100%;
+}
+.upImgItem image.defaultImg{
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+  padding: 100rpx;
+}
+.upImgItem text{
+  display: block;
+  color: #999
+}
+

@@ -1,0 +1,38 @@
+/* 平台介绍 */
+page{
+  background-color: #f2f2f2;
+}
+.plat{
+  padding: 30px 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo{
+  width: 250rpx;
+  height: 250rpx;
+}
+.title{
+  font-size: 20px;
+  margin: 20px;
+}
+.qrCode{
+  margin: 5px 0;
+  width: 350rpx;
+  height: 350rpx;
+}
+.copyHref{
+  width: 350rpx;
+  background-color: #2BA4E3;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 2;
+  border-radius: 3px;
+}
+
+
+
+
+
+

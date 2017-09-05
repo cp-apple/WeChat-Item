@@ -1,0 +1,58 @@
+<!--我的声音-->
+<view class="">
+  <view class="section1">
+    <view class="item" bindtap="goYouQiA">
+      <image src="/images/icons/myvoice1.png"></image>
+      <view>
+        <text class="tit">你问我答</text>
+        <text>人工及时在线回复您的咨询和疑问</text>
+      </view>      
+    </view>
+    <view class="item" bindtap="goOnlineMsg">
+      <image src="/images/icons/myvoice1.png"></image>
+      <view>
+        <text class="tit">在线留言</text>
+        <text>向党政机关提出意见、建议、反映问题是您的合法权利</text>
+      </view>      
+    </view>
+  </view>
+
+  <!-- 联系电话 -->
+  <view class="phoneBox">
+    <image src="/images/icons/phone.png"></image>
+    <text class="tel">962062</text>
+    <text>公众拨打市民热线随时随地进行信息查询、资讯、投诉、举报、建议等服务</text>
+  </view>
+
+  <!-- 问题列表 -->
+  <view class="faq">
+    <view class="faqTit">
+      <text class="skew">
+        <text>常见问题</text>
+      </text>
+      <text class="seeAll" bindtap="goPList">查看全部 »</text>    
+    </view>
+
+    <block wx:for="{{problems}}" wx:key="{{item}}">
+      <view class="problem" bindtap="goPDetail" data-faq-id="{{item.faqId}}" wx:if="{{item.isCommon}}">
+        <text class="tit">{{item.faqTitle}}</text>
+        <text>{{item.faqDetail}}</text>   
+        <image src="/images/icons/r_arrow2.png"></image>   
+      </view>
+    </block>
+
+  </view> 
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+

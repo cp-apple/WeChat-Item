@@ -1,0 +1,38 @@
+/* 服务网点详情页 */
+page{
+  background-color: #f2f2f2;
+}
+.sDotTit,.sDotCon{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  
+  background-color: #fff;
+}
+.sDotTit image{
+  width: 100%;
+}
+.sDotTit text{
+  padding: 10px 20rpx;
+  font-size: 16px;
+}
+.sDotCon{
+  margin-top: 10px;
+  padding-top: 5px;
+}
+.sDotCon view{
+  padding: 5px 20rpx;
+}
+.sDotCon view:nth-child(3){
+  padding-bottom: 5px;
+}
+.sDotCon view image{
+  width: 28rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+#map{
+  width: 100%; 
+  height: 450rpx;
+}
+
+

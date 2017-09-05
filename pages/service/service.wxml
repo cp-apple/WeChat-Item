@@ -1,0 +1,16 @@
+<!--生活服务-->
+<view class="">
+  <view class="tabTitle">
+    <text class="{{titleTag=='政务服务'?'on':''}}" bindtap="zwServiceTit">政务服务</text>
+    <text class="{{titleTag=='生活服务'?'on':''}}" bindtap="shServiceTit">生活服务</text>
+  </view>
+
+  <view class="tabCon">
+    <block wx:for="{{lifeService}}" wx:key="{{item}}">
+      <view class="item" data-life-id="{{item.lifeId}}" data-life-name="{{item.lifeName}}" wx:if="{{item.lifeType==titleTag}}" bindtap="golifeDetail">
+        <image src="{{item.lifeIcon}}"></image>
+        <text>{{item.lifeName}}</text>
+      </view>
+    </block>
+  </view>
+</view>

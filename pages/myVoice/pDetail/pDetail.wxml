@@ -1,0 +1,11 @@
+<!--/* 常见问题详情 */-->
+<view class="">
+  <block>
+    <view class="faqDetail">
+      <text class="tit">{{aProblemDetail.faqTitle}}</text>
+      <text class="date">{{aProblemDetail.faqCreateDate}}</text>
+      <text class="author">{{aProblemDetail.faqAuthor}}</text>      
+      <text class="qDetail">{{aProblemDetail.faqDetail}}</text>
+    </view>
+  </block>
+</view>

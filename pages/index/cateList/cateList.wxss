@@ -1,0 +1,51 @@
+/* 服务类别列表 */
+page{
+  background-color: #f2f2f2;
+}
+.cateListBox{
+  margin: 10px 15rpx;
+  display: flex;
+  flex-direction: column;    
+}
+.cListItem{
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  text-indent: 20rpx;
+  border-radius: 3px;
+}
+.cListItem image{
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  width: 20rpx;
+  height:40rpx;
+}
+.cListItem text{
+  display: block;
+  line-height: 80rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.detailTit{
+  padding-right: 60rpx;
+  border-bottom: 1px solid #ddd;
+}
+.detailSurvey{
+  color: #757575;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

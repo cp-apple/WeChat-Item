@@ -1,0 +1,126 @@
+/* 我的声音 */
+page{
+  background-color: #F2F2F2;
+  color: #808080;
+}
+.section1{
+  padding: 10px 10rpx;
+  display: flex;
+  color: #fff;
+}
+.section1 view.item{
+  position: relative;
+  flex: 1;
+  padding: 10rpx;
+  padding-left: 120rpx;
+  margin: 10rpx;
+  border-radius: 5px;
+}
+.section1 view.item:first-child{
+  background-color: #FF618F;
+}
+.section1 view.item:last-child{
+  background-color: #FFA861;
+}
+.section1 view image{
+  position: absolute;
+  top: 30rpx;
+  left: 10rpx;
+  margin-right: 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.section1 text{  
+  font-size: 12px;
+  line-height: 1;
+}
+.section1 .tit{
+  padding-top: 10rpx;
+  font-size: 18px;
+  display: block;
+}
+
+/* 联系电话 */
+.phoneBox{
+  position: relative;
+  padding:20px 20rpx;
+  padding-left: 140rpx;    
+  background-color: #fff;
+}
+.phoneBox image{
+  position: absolute;
+  top: 60rpx;
+  left: 20rpx;
+  display: block;
+  margin-right: 15rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.phoneBox text{
+  color: #808080;
+}
+.phoneBox .tel{
+  font-size: 22px;
+  display: block;
+  color: #4c4c4c;
+}
+
+/*  常见问题  */
+.faq{
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  background-color: #fff;  
+}
+.seeAll{
+  float: right;
+  line-height: 60rpx;
+}
+.skew{
+  position: relative;
+  left: -50rpx;  
+  display: inline-block;
+  width: 220rpx;
+  text-indent: 50rpx;
+  line-height: 60rpx;
+  background-color: #2BA4E3;  
+  color: #fff;
+  transform: skewX(-30deg);
+}
+.skew text{
+  display: block;
+  font-size: 16px;  
+  transform: skewX(30deg)
+}
+.problem{
+  position: relative;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 50rpx;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+.problem image{
+  position: absolute;
+  top: 30rpx;
+  right: 0;
+  width: 20rpx;
+  height: 40rpx;
+
+}
+.problem:last-child{
+  border: 0;
+}
+.problem text{
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.problem .tit{
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #4c4c4c;
+}
+
+
+

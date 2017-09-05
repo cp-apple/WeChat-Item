@@ -1,0 +1,10 @@
+<!--常见问题-->
+<view class="problems">
+  <block wx:for="{{problems}}" wx:key="{{item}}">
+    <view class="aFAQ" bindtap="goPDetail" data-faq-id="{{item.faqId}}">
+      <image class="rightImg" src="/images/icons/r_arrow2.png"></image>
+      <image class="proImg" src="/images/icons/FAQ.png"></image>
+      <text>{{item.faqTitle}}</text>
+    </view>
+  </block> 
+</view>

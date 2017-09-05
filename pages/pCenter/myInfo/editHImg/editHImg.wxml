@@ -1,0 +1,12 @@
+<!--修改头像-->
+<form bindsubmit="formSubmit">
+  <view class="section" bindtap="uploadImg">
+    <image class="" src="{{tempFilePaths}}" wx:if="{{tempFilePaths}}"></image>
+    <image class="addIcon" src="/images/icons/addFile.png" wx:if="{{!tempFilePaths}}"></image>
+  </view>
+
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+  </view>
+</form>
+

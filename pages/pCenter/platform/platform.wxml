@@ -1,0 +1,8 @@
+<!--平台介绍-->
+<view class="plat">
+  <image class="logo" src="/images/icons/logo.png"></image>
+  <text class="title">锦江政民通</text>
+  <text class="share">邀请好友扫一扫分享给TA</text> 
+  <image class="qrCode" src="/images/icons/qrCode.jpg"></image>
+  <text class="copyHref">复制分享链接</text>
+</view>

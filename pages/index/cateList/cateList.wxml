@@ -1,0 +1,12 @@
+<!-- 服务类别列表 -->
+<view class="">
+  <view class="cateListBox">
+    <block wx:for="{{cateDetail}}" wx:key="{{item}}">
+      <view class="cListItem">
+        <image src="/images/icons/r_arrow.png"></image>
+        <text class="detailTit" catchtap="goApplyConditionTap" data-cate-id="{{cateId}}" data-detail-id="{{item.detailId}}">{{item.detailTit}}</text>
+        <text class="detailSurvey">{{item.detailSurvey}}</text>
+      </view>
+    </block>
+  </view>
+</view>

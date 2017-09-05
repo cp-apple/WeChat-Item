@@ -1,0 +1,22 @@
+<!--服务网点详情页-->
+<view class="">
+  <view class="sDotTit">
+    <image src="{{thisSDotInfo.sDotImg}}"></image>
+    <text>{{thisSDotInfo.sDotDetailName}}</text>
+  </view>
+  <view class="sDotCon">
+    <view class="">
+      <image src="/images/gray_map.png"></image>
+      <text>{{thisSDotInfo.sDotAddr}}</text>
+    </view>
+    <view class="">
+      <image src="/images/gray_tel.png"></image>
+      <text>{{thisSDotInfo.sDotTel}}</text>
+    </view>
+    <view class="">
+      <image src="/images/gray_clock.png"></image>
+      <text>{{thisSDotInfo.sDotWorkTime}}</text>
+    </view>
+    <map id="map" longitude="{{thisSDotInfo.sDotCoordinate[1]}}" latitude="{{thisSDotInfo.sDotCoordinate[0]}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location></map>
+  </view>
+</view>

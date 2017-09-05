@@ -1,0 +1,60 @@
+<!--在线办理表单页面-->
+<view class="oHandlePage">
+  <view class="dealTit">{{dealTit}}</view>
+  <form bindsubmit="formSubmit">
+    <view class="section">
+      <text class="essential">*</text>
+      <text class="section__title">姓名</text>
+      <input name="input" placeholder="请输入您的姓名" placeholder-style="font-size:12px;" />
+    </view>
+    <view class="section">
+      <text class="essential">*</text>
+      <text class="section__title">身份证号</text>
+      <input name="input" placeholder="请输入您的身份证号" placeholder-style="font-size:12px;" />
+    </view>
+    <view class="section">
+      <text class="essential">*</text>
+      <text class="section__title">联系号码</text>
+      <input name="input" placeholder="请输入您的联系号码" placeholder-style="font-size:12px;" />
+    </view>
+    <view class="section">
+      <text class="essential">*</text>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{handleCenterArr}}">
+        <view class="picker">
+          <text class="section__title">受理中心名称</text> <text class="pickerSelTxt">{{handleCenterArr[index]}}</text>
+        </view>
+      </picker>
+    </view>
+    <view class="uplBox">
+      <text class="section__title">照片上传</text>
+      <view class="uploadArea">
+        <view class="upImgItem">
+          <view class="imgBox" bindtap="chooseImg" data-img-box-id="1">
+            <image src="{{imgSrc1}}" wx:if="{{imgShow1}}"></image>
+            <image class="defaultImg" src="/images/uplImg.png"></image>
+          </view>
+          <text>居民身份证正面照</text>
+        </view>
+         <view class="upImgItem">
+          <view class="imgBox" bindtap="chooseImg" data-img-box-id="2">
+            <image src="{{imgSrc2}}" wx:if="{{imgShow2}}"></image>
+            <image class="defaultImg" src="/images/uplImg.png"></image>
+          </view>
+          <text>居民身份证正面照</text>
+        </view>
+         <view class="upImgItem">
+          <view class="imgBox" bindtap="chooseImg" data-img-box-id="3">
+            <image src="{{imgSrc3}}" wx:if="{{imgShow3}}"></image>
+            <image class="defaultImg" src="/images/uplImg.png"></image>
+          </view>
+          <text>居民身份证正面照</text>
+        </view>        
+        
+      </view>
+    </view>
+
+    <view class="btn-area">
+      <button formType="submit">提交</button>
+    </view>
+  </form>
+</view>

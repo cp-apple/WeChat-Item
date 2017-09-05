@@ -1,0 +1,59 @@
+/* 生活服务 */
+.tabTitle{
+  display: flex;
+  padding: 10px 15rpx;
+  background-color: #2BA4E3;
+
+}
+.tabTitle text{
+  flex: 1;
+  padding: 10rpx;
+  border: 2px solid #fff;
+  text-align: center;
+  color: #fff;
+}
+.tabTitle text:nth-child(1){
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: 0;
+}
+.tabTitle text:nth-child(2){
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 0;
+}
+.tabTitle text.on{
+  background-color: #fff; 
+  color: #2BA4E3;
+}
+
+.tabCon{
+  overflow: hidden;
+}
+.item{
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  text-align: center;
+  border-right: 1px solid #ddd;  
+  border-bottom: 1px solid #ddd;  
+}
+.item:nth-child(3n){
+  border-right: 0;
+}
+.item image{
+  display: block;
+  margin: 15px auto;
+  width: 100rpx;
+  height: 100rpx;
+}
+.item text{
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+
+
+
+

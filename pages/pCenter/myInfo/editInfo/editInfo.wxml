@@ -1,0 +1,23 @@
+<!--修改资料-->
+<form bindsubmit="formSubmit">
+  <view class="section">
+    <text class="section__title">姓名</text>
+    <input name="input" placeholder="请输入您的姓名" placeholder-style="font-size:12px;" />
+  </view>
+  <view class="section">
+    <text class="section__title">身份证号</text>
+    <input name="input" placeholder="请输入您的身份证号" placeholder-style="font-size:12px;" />
+  </view>
+  <view class="section">
+    <text class="section__title">联系号码</text>
+    <input name="input" placeholder="请输入您的联系号码" placeholder-style="font-size:12px;" />
+  </view>
+  <view class="section">
+    <text class="section__title">联系邮箱</text>
+    <input name="input" placeholder="请输入您的联系邮箱" placeholder-style="font-size:12px;" />
+  </view>
+
+  <view class="btn-area">
+    <button formType="submit">确认修改</button>
+  </view>
+</form>

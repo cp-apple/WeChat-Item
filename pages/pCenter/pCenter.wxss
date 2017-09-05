@@ -1,0 +1,56 @@
+/* 个人中心 */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2BA4E3;
+  padding: 10rpx 0 20rpx;
+}
+
+.userinfo-avatar {
+  width: 180rpx;
+  height: 180rpx;
+  margin: 20rpx;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+.userinfo text{
+  color: #fff;
+}
+.userinfo-nickname {
+  font-size: 18px;
+}
+.userinfo-other{
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.allItem{
+  padding: 20px 0;
+  display: block; 
+}
+.item{
+  float: left;
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+
+.item image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.item text{
+  display: block;
+  margin: 10px 0 15px;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+

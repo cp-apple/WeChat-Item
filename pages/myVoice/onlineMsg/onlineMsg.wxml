@@ -1,0 +1,78 @@
+<!--在线留言-->
+<view class="">
+  <view class="title">
+    <text class="{{giveWho==1?'on':''}}" bindtap="giveDepartment">给部门留言</text>
+    <text class="{{giveWho==2?'on':''}}" bindtap="giveStreet">给街道留言</text>
+  </view>
+
+  <form bindsubmit="formSubmit">
+    <view class="section">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{objectAppealType}}" range-key="{{'name'}}">
+        <view class="picker">
+          <text class="section__title">留言分类</text>
+          <text class="fr">{{objectAppealType[index].name}} </text>
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <picker wx:if="{{giveWho==1}}" bindchange="bindPickerChange2" value="{{id}}" range="{{departmnets}}">
+        <view class="picker">
+          <text class="section__title">留言对象</text>
+          <text class="fr">{{departmnets[id]}} </text>
+        </view>
+      </picker>
+      <picker wx:if="{{giveWho==2}}" mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="picker">
+          <text class="section__title">留言对象</text>
+          <text class="fr">{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}</text>
+        </view>
+      </picker>
+    </view>
+
+    <view class="section">
+      <text class="need">*</text><text class="section__title">姓名</text>
+      <input name="name" placeholder="请输入您的真实姓名" placeholder-style="font-size:12px;" />
+    </view>
+    <view class="section">
+      <text class="section__title">联系电话</text>
+      <input name="tel" placeholder="请输入您的手机号码" placeholder-style="font-size:12px;" />
+    </view>
+    <view class="section">
+      <text class="section__title">性别</text>
+      <radio-group name="gender">
+        <label><radio value="b" checked/>男</label>
+        <label><radio value="g"/>女</label>
+        <label><radio value="something"/>未知</label>
+      </radio-group>
+    </view>
+    <view class="section">
+      <text class="need">*</text><text class="section__title">职业</text>
+      <input name="work" placeholder="请输入您的职业" placeholder-style="font-size:12px;" />
+    </view>
+    <view class="section">
+      <text class="section__title">邮箱</text>
+      <input name="email" placeholder="请输入您的邮箱" placeholder-style="font-size:12px;" />
+    </view>
+    <view class="section">
+      <text class="section__title">诉求标题</text>
+      <input name="title" placeholder="请输入诉求标题" placeholder-style="font-size:12px;" />
+    </view>
+    <view class="section conDescribe">
+      <text class="section__title">内容描述</text>
+      <textarea name="content" bindblur="bindTextAreaBlur" placeholder="请在这里输入您的意见或j建议" />
+    </view>
+    <view class="section">
+      <text class="section__title">是否愿意公开您的留言？</text>
+      <radio-group name="isPublic">
+        <label><radio value="gk" checked/>公开</label>
+        <label><radio value="bm"/>保密</label>
+      </radio-group>
+    </view>
+
+    <view class="btn-area">
+      <button formType="submit">确认</button>
+      <button formType="reset">取消</button>
+    </view>
+  </form>
+
+</view>
