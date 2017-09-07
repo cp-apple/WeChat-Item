@@ -13,8 +13,8 @@
   </block>
 
   <form bindsubmit="formSubmit">
-    <image src="/images/icons/microphone.png"></image>
-    <input type="text" focus="{{focus}}" name="sayValue" value="{{iptValue}}" />        
+    <image src="/images/record{{microphone}}.png" bindtouchstart="startRecord" bindtouchend="endRecord"></image>
+    <input type="text" focus="{{focus}}" name="sayValue" value="{{iptValue}}" class="icon" />        
     <button class="btn" formType="submit">发送</button>
   </form>
 </view>

@@ -91,8 +91,8 @@ form {
 }
 
 form image {
-  width: 60rpx;
-  height: 60rpx;
+  width: 50rpx;
+  height: 50rpx;
 }
 
 input {
@@ -118,3 +118,8 @@ input {
   vertical-align: middle;
   line-height: 1.8;
 }
+
+
+
+
+
